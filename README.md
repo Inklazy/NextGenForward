@@ -313,3 +313,9 @@ A: `https://api.telegram.org/bot<BOT_TOKEN>/deleteWebhook?drop_pending_updates=t
 
 
 **如果您喜欢这个项目，还请 Star ⭐️**
+
+## Deployment after account migration
+
+This copy is maintained at https://github.com/Inklazy/NextGenForward and deploys to the existing Cloudflare Worker `nextgenforward` from the `main` branch.
+
+The Wrangler configuration preserves dashboard variables with `keep_vars = true` and uses the existing `TOPIC_MAP` namespace. Keep `BOT_TOKEN` in Cloudflare Secrets; do not commit it to GitHub. The existing Worker URL and Telegram webhook are retained.
